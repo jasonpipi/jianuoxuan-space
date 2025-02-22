@@ -1,0 +1,243 @@
+/* Global font style for the body */
+body {
+    font-family: 'Exo', sans-serif;
+    line-height: 1.6em;
+    color: #000000;
+}
+
+/* Unified heading style for h1, h2, and h3 */
+h1, h2, h3 {
+    font-family: 'Exo', sans-serif;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 1.25em;
+}
+
+/* h1 specific styling */
+h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: 1.25em;
+}
+
+/* h2 specific styling */
+h2 {
+    font-size: 1.6rem;
+    margin-top: 0.625em;
+}
+
+/* h3 specific styling */
+h3 {
+    font-size: 1.5rem;
+    margin-top: 0.75em;
+}
+
+/* Class for generic heading styling */
+.heading {
+    font-size: 1rem; /* Adjust as needed */
+    font-weight: bold;
+}
+
+/* List styling */
+ul, ol {
+    font-family: 'Exo', sans-serif;
+    font-size: 0.9375rem;
+    font-weight: lighter;
+    list-style-position: inside;
+    color: #000000;
+}
+
+/* Container styling */
+.container {
+    max-width: 50rem;
+}
+
+/* Footer navlink styling */
+footer .nav-link {
+    color: black;
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+footer .nav-link:hover {
+    color: gray; /* Hover effect to change color to gray */
+    text-decoration: underline;
+}
+
+/* Footer styling */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 0.3125rem 0.625rem; /* Padding for top-bottom and left-right */
+    border-top: 0.0625rem solid #dddddd;
+    z-index: 1000; /* Stacking order */
+    font-size: 1.25rem;
+}
+
+/* Ensure footer does not overlap with page content */
+body {
+    padding-bottom: 3rem; /* Adjust padding to ensure space for footer */
+}
+
+/* Styling for project list items  cs50.ai*/
+.project-list li {
+    cursor: pointer;
+    margin-bottom: 0.3125rem;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+#projectList {
+    position: fixed;
+    top: 1.25rem;
+    left: 2%;
+    width: 30%; /* Adjust width as needed */
+    height: 100%;
+    overflow-y: scroll;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+    background-color: white; /* Optional: Add background color */
+    padding: 1.25rem; /* Optional: Add padding */
+}
+
+/* Styling for project description cs50.ai*/
+.project-description {
+    font-size: 0.875rem;
+    margin-top: 0.625rem;
+    display: none;
+}
+
+/* Project image container styling cs50.ai*/
+.project-image {
+    position: relative;
+    overflow: hidden;
+    margin-right: 0.3125rem; /* Adjust the value as needed */
+}
+
+/* Styling for project images */
+.project-image img {
+    width: 100%;
+    transition: transform 0.3s ease;
+    height: auto;
+}
+
+/* Project number styling */
+.project-number {
+    position: absolute;
+    top: 0.3125rem;
+    left: 0.3125rem;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    padding: 0.125rem 0.3125rem;
+    border-radius: 0.1875rem;
+    font-size: 0.75rem;
+}
+
+/* Styling for all anchor tags cs50.ai*/
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    color: gray;
+}
+
+/* Image zoom-in effect cs50.ai*/
+.project-image img:hover {
+    transform: scale(1.1);
+}
+
+/* Change the background color of the dropdown title to black and text to white only on hover */
+.accordion-button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Keep the dropdown title background color white and arrow color black when expanded (not hovered) */
+.accordion-button:not(.collapsed) {
+    background-color: white;
+    color: black;
+    border-color: black; /* Optional: darken the border for better visibility */
+}
+
+/* Remove the blue outline when the dropdown title is focused (clicked) */
+.accordion-button:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+/* Change the color of the arrow icon to black when expanded */
+.accordion-button:not(.collapsed)::after {
+    filter: invert(1);
+}
+
+/* Ensure dropdown content text color remains consistent */
+.accordion-collapse .accordion-body {
+    color: black;
+}
+
+/* Responsive design cs50.ai*/
+@media (max-width: 75em) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.3rem;
+    }
+    .container {
+        max-width: 45rem; /* Adjusts container width for large screens */
+    }
+}
+
+@media (max-width: 62em) {
+    h1 {
+        font-size: 1.6rem;
+    }
+    h2 {
+        font-size: 1.4rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+    footer .nav-link {
+        font-size: 1rem; /* Smaller font size for nav links on medium screens */
+    }
+}
+
+@media (max-width: 48em) {
+    h1 {
+        font-size: 1.4rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    h3 {
+        font-size: 1.1rem;
+    }
+    .project-number {
+        font-size: 0.7rem; /* Smaller project number for small screens */
+    }
+    .container {
+        padding: 0 0.9375rem; /* Adds padding on small screens */
+    }
+}
+
+@media (max-width: 36em) {
+    h1, h2, h3 {
+        text-align: center; /* Centers headings for very small screens */
+    }
+    footer {
+        font-size: 0.9rem; /* Smaller font size for footer on extra small screens */
+    }
+    .container {
+        padding: 0 0.625rem; /* Additional padding for extra small screens */
+    }
+}

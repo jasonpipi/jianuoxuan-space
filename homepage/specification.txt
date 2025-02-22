@@ -1,0 +1,53 @@
+10 HTML tags
+1. <html>: Defines the root of the HTML document.
+2. <head>: Contains meta-information about the document
+3. <title>: The title of the webpage
+4. <link>: Links to external stylesheets like Bootstrap and custom CSS files.
+5. <body>： main part of the code
+6. <div>: Defines sections or divisions
+7. <h1>, <h2>, <h3>: Heading tags
+8. <ul> and <li>: Used to create unordered lists, like navigation menus or project lists.
+9. <img>: Embeds images in the HTML, such as project visuals and logos.
+10. <footer>: Defines the footer section, typically containing links or contact information.
+
+other tags I learned through cs50.ai and lecture:
+11. <nav>: Contains navigation links for easy site navigation.
+12. <button>: Adds clickable buttons, such as for expanding accordion sections.
+13. <span>: An inline container for styling parts of text, such as project numbers or emphasized text.
+14. <p>: Paragraph tag used for blocks of text.
+15. <script>: Used to link or embed JavaScript code within the document.
+16. <meta>: Provides metadata like character set information for the document.
+17. <header>: Defines the header section, often including site titles or navigation.
+18. <section>: Groups related content within a page, useful for organizing content.
+
+
+5 CSS properties
+1. color: Sets the color of text
+2. font-size: Controls the size of the text
+3. background-color: Specifies the background color of elements
+4. padding: Adds space within elements around their content
+5. margin: Adds space around elements,
+
+
+other properties I learned through cs50.ai and lecture:
+1. font-family: Defines the font used within elements
+2. text-align: Aligns text within an element
+3. position: Specifies positioning types like sticky, fixed, or relative, used to create fixed or scrolling elements.
+4. border: Adds borders around elements for defined boundaries or visual emphasis.
+5. display: Controls how elements are displayed (e.g., none to hide an element or block for full width).
+6. overflow: Controls the behavior of overflowing content, often set to hidden or auto for images or text.
+7. text-decoration: Adds or removes decorations like underlines on text (e.g., for links).
+8. line-height: Sets the spacing between lines, improving readability.
+9. z-index: Specifies stacking order, useful for elements like the footer or sticky headers.
+10. width and height: Sets the size of elements explicitly, such as images or containers.
+
+
+
+a brief (one-sentence) description of how you chose to use JavaScript and Bootstrap.
+
+JavaScript is used to manage interactivity within the project list. When users click a project name,
+JavaScript functions toggle the visibility of the corresponding project description, enhancing navigation and user experience.
+
+Bootstrap provides a responsive grid system, making the layout adaptable across different screen sizes.
+Components such as accordion are used for collapsible sections, and utility classes like text-center and mt-4 ensure consistent spacing and alignment.
+（learned basically from cs50.ai）

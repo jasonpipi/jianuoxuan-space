@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <!-- Google Fonts: Exo -->
+        <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&display=swap" rel="stylesheet">
+        <!-- CSS -->
+        <link href="styles.css" rel="stylesheet">
+        <title>Project - NUO WORKSHOP</title>
+    </head>
+
+    <body>
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <!-- Project Directory -->
+            <div class="col-md-4 project-list" id="projectList">
+                <h1>Projects</h1>
+                <ul>
+                    <li onclick="showProject('project1')">Residence No. 1 At the Heart of Light</li>
+                    <li onclick="showProject('project2')">The Apparel Exchange</li>
+                    <li onclick="showProject('project3')">Construction Manual for Serjilla</li>
+                    <li onclick="showProject('project4')">A Warm Spot</li>
+                </ul>
+
+                <div id="project1" class="project-description">
+                    <p>I grew up in a rural, self-built longhouse. It is a family home that can accommodate nine people.
+                        One day I met in the house (ti jin means patio in Ningbo dialect).</p>
+
+                    <p>Years pass, the home ages, the children grow up, and the family enters their twilight years.
+                        The number of people in the house gradually dwindled, with the elderly choosing to settle here
+                        while the younger generation saw it as a weekend residence. The patio was covered due to drainage issues.</p>
+
+                    <p>The renovation plan finds a subtle logic of renewal in the sensibility.</p>
+
+                </div>
+                <div id="project2" class="project-description">
+                    <p>Unlike traditional facilities, this innovative Apparel Exchange integrates spaces more diversely and repurposes existing buildings,
+                        aiming to cut carbon emissions across clothing production and sales stages. lt encourages public participation in a more open and
+                        communal fashion production process.</p>
+                    <p>The central greenhouse serves as the core connecting multiple buildings, adaptable with vertically movable floor panels.
+                         Different heights and usage states among these panels facilitate various scenarios such as lectures, clothing exhibitions,
+                         and workshops. Vertical pipes control the garment factory's air and combine with the structural columns supporting these movable panels.
+                    </p>
+                </div>
+
+                <div id="project3" class="project-description">
+                    <p>A century ago, optimism fueled proactive constructions, envisioning a great future. Today, climate change, urban fragmentation, and environmental crises prompt urgent
+                        questions about confronting these challenges.</p>
+                    <p>Environmental changes instill a sense of urgency and pressure on humanity. Prompting contemplation on how to confront these challenges. In this context, the methodology of construction remains indispensable.
+                        Seriilla, situated among Syria's northwestern open museums which are known as dead cities, witnessed diverse cultural transformations during urbanization and warfare, evolving from a nomad land and quarry to a tourist attraction and even a military checkpoint. The conflicts between residents and ruins persisted until displaced individuals found refuge in these dilapidated houses a few years ago.
+                        Presently, Serjilla stands as an isolated ruin and an open resource reservoir. The ongoing struggle for control over these resources is contributing to a crisis in cultural heritage protection and escalating tensions between people and resources.</p>
+                    <p>The proposal presents a manifesto for the restoration of historic monuments in the form of a building manual. In its declaration, builders will emulate the patterns of natural landscape changes, using vegetation to cover the original ruins and achieving a nuanced natural restoration. Mimicking the principles of natural material development the approach involves material cascading use and ruin mining measures
+                    This cultivated artificial landscape strives to foster a dynamic heritage, creating a self-sustaining system. The emerging ruins will offer refuge for refugees, contributing to the transformation of Seriilla's sustainable future.
+                    </p>
+                </div>
+
+                <div id="project4" class="project-description">
+                    <p>The installation draws inspiration from everyday objects associated with temperature gracefully hovers on the river's surface, resembling a hot spring pool. The burner sections embodied by a radiant balloon, while the pool area features warm railings and a sprinkler. The installation employs a gradient use of heat, efficiently utilizing residual warmth. Consequently, all interfaces of the installation emanate warmth, To counteract thermal pollution in the water, a heat-insulating layer and geothermal heat pumps maintain a lower temperature in the lower interface.
+                        As the installation floats on the river it becomes a captivating warm spot for residents. This not only fuels the passion for winter swimming among locals but also injects vitality into the winter waterfront space.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Project Images -->
+            <div class="col-md-8 offset-md-4">
+                <div class="row">
+                    <div class="col-6 mb-4">
+                        <div class="project-image" onmouseover="showDescription('project1')" onmouseout="hideDescription('project1')">
+                            <span class="project-number">1</span>
+                            <img src="project_image_1.png" alt="Project 1">
+                        </div>
+                    </div>
+                    <div class="col-6 mb-4">
+                        <div class="project-image" onmouseover="showDescription('project2')" onmouseout="hideDescription('project2')">
+                            <span class="project-number">2</span>
+                            <img src="project_image_2.png" alt="Project 2">
+                        </div>
+                    </div>
+                    <div class="col-6 mb-4">
+                        <div class="project-image" onmouseover="showDescription('project3')" onmouseout="hideDescription('project3')">
+                            <span class="project-number">1</span>
+                            <img src="project_image_3.png" alt="Project 3">
+                        </div>
+                    </div>
+                    <div class="col-6 mb-4">
+                        <div class="project-image" onmouseover="showDescription('project4')" onmouseout="hideDescription('project4')">
+                            <span class="project-number">2</span>
+                            <img src="project_image_4.png" alt="Project 4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Navigation Bar -->
+    <footer class="text-center mt-5">
+        <nav class="navbar navbar-light">
+            <a class="nav-link" href="index.html">NUO WORKSHOP</a>
+            <a class="nav-link" href="project.html">Project</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+    </footer>
+
+    <script>
+        function showProject(projectId) {
+            // Hide all descriptions
+            document.querySelectorAll('.project-description').forEach(desc => {
+                desc.style.display = 'none';
+            });
+
+            // Show selected description
+            document.getElementById(projectId).style.display = 'block';
+        }
+
+        function showDescription(projectId) {
+            document.getElementById(projectId).style.display = 'block';
+        }
+
+        function hideDescription(projectId) {
+            document.getElementById(projectId).style.display = 'none';
+        }
+    </script>
+
+    </body>
+</html>
